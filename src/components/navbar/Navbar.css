@@ -1,0 +1,18 @@
+
+.Navbar{
+    height: 112px
+}
+.Navbar .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 117px;
+    width: 100%;
+    background-color: var(--greyLight-1);
+    box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+    position: fixed;
+    z-index: 5;
+    align-content: center;
+}

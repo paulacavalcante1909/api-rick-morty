@@ -1,4 +1,4 @@
-.CardCharacter{
+.CardEpisode{
   margin: auto 0;
   margin-top: 30px;
   width: 230px;
@@ -9,15 +9,11 @@
 
 /* CHIP */
 
-.chip img{
-  width: 90%;
-  margin-top: 13px;
-  border-radius: 1rem;
-}
 .chip {
   justify-self: center;
   width: 25rem;
-  height: auto;
+  min-height: 120px;
+  padding: 10px;
   border-radius: 1rem;
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
   display: flex;
@@ -39,7 +35,7 @@
   color: var(--primary);
 }
 .chip p {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
     /* margin-left: -1.8rem; */
     text-align: left;
     width: 85%;
