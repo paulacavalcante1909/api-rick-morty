@@ -1,8 +1,8 @@
 import './Search.css';
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { connect } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { redirect } from "react-router-dom";
 import { bindActionCreators } from 'redux';
 import { searchCharacter } from '../../actions';
 
@@ -10,19 +10,12 @@ function Search(props) {
   const { searchCharacter } = props;
   const [term, setTerm] = useState('');
 
-  const navigate = useNavigate();
-  const returnToHome = useCallback(() => navigate('/', { replace: true }), [navigate]);
-
-
   function searchCharacterers(e) {
-   
-    returnToHome();
+    redirect("/");
     setTerm(e.target.value);
     searchCharacter(term)
 
   }
-
-
 
   return (
     <div className="Search">

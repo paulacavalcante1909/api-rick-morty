@@ -1,10 +1,6 @@
 import axios from 'axios';
 
-
-
 const url = 'https://rickandmortyapi.com/api/';
-
-
 
 
 export const getCharacters = async () => {
